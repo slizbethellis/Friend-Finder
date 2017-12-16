@@ -1,0 +1,25 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "a petri dish of friendship",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slizbethellis/Friend-Finder.git"
+  },
+  "author": "Sarah Ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slizbethellis/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/slizbethellis/Friend-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}
