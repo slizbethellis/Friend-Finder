@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- links to Bootstrap stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css">
+  <!-- links to Google Web Fonts and Font Awesome -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Overpass|Press+Start+2P" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b7e3bcf6e1.js"></script>
+  <!-- JQuery and Bootstrap's JS libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- link to user stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-success">
+    <h1 class="navbar-brand text-light mb-0">Friend<s>face</s><span class="color">FINDER</span></h1>
+  </nav>
+
+	<div class="container-fluid">
+    <div class="col-md-12">
+      <div class="card mt-2">
+        <div class="card-body">
+          <h2>Survey Questions</h2>
+          <hr>
+          <h4><strong>About You</strong></h4>
+          <h5>Name (Required)</h5>
+          <input type="text" id="name" class="form-control" required>
+
+          <h5>Link to Photo Image (Required)</h5>
+          <input type="text" id="photo" class="form-control" required>
+
+          <hr>
+          <h5 class="text-danger">Answer the statements based on how strongly you agree or disagree with them. '1' is for 'Strongly Disagree', and '5' is for 'Strongly Agree'</h5>
+          <hr>
+
+          <h5><span class="badge badge-success">Question 1</span> Shoes are really important to you.</h5>
+          <select class="chosen-select col-md-6" id="q1">
+            <option value=""></option>
+            <option value="1">1 (What was all that about?)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (flutters feet, while shouting "The shoes-uh!!!")</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 2</span> Tech is your native language.</h5>
+          <select class="chosen-select col-md-6" id="q2">
+            <option value=""></option>
+            <option value="1">1 (*shouts at computer, thinking it's voice activated*)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (...and you don't want to end up in the middle of invalid memory!)</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 3</span> You consider yourself a people person.</h5>
+          <select class="chosen-select col-md-6" id="q3">
+            <option value=""></option>
+            <option value="1">1 (I'd say we're on a bi-weekly beating.)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (You're used to being social piranhas. I'm a very popular person usually.)</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 4</span> Your lies often get out of hand because you have trouble judging the scale.</h5>
+          <select class="chosen-select col-md-6" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Just tell him I'm busy!)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Because she's dead!)</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 5</span> When there's a fire in the building, you keep your cool.</h5>
+          <select class="chosen-select col-md-6" id="q5">
+            <option value=""></option>
+            <option value="1">1 (shrieks "Fire! Fire!")</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (types "Dear Sir stroke Madam. Fire, exclamation mark...")</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 6</span> Profanity is not a typical part of your vocabulary.</h5>
+          <select class="chosen-select col-md-6" id="q6">
+            <option value=""></option>
+            <option value="1">1 (I'm not f****** joking! Call me a f****** ambulance!)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Ploppers!)</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 7</span> You understand your role at work well.</h5>
+          <select class="chosen-select col-md-6" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Is it good that it's doing that?)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (I am your conduit, I am your bridge. Ich. Bin. Ein. Nerd.)</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 8</span> If you got a robot hand, it would be used for mayhem.</h5>
+          <select class="chosen-select col-md-6" id="q8">
+            <option value=""></option>
+            <option value="1">1 (I would have used my robotic hand for good!)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (*maniacal laughter while smashing things with robot hand*)</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 9</span> Watching sports or participating in a sport is something you enjoy.</h5>
+          <select class="chosen-select col-md-6" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Maybe he’ll kick the ball. Indeed he has!)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (What was Wenger thinking sending Walcott on that early?)</option>
+          </select>
+          <br><br>
+
+          <h5><span class="badge badge-success">Question 10</span> You know how to conduct yourself at a funeral.</h5>
+          <select class="chosen-select col-md-6" id="q10">
+            <option value=""></option>
+            <option value="1">1 (I'm sorry for your loss. Move on.)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Just say you’re sorry for their loss, then move on.)</option>
+          </select>
+
+          <br>
+          <br>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-info btn-lg" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+           Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-white">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/slizbethellis/Friend-Finder">GitHub Repo</a></p>
+      </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Your Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="https://scontent-ort2-2.xx.fbcdn.net/v/t31.0-8/17310980_1260965310654213_682160483307735764_o.jpg?oh=aa718ef6221c0b4b7839240510b0cbb9&oe=5AD4933D" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // Capture the form inputs
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        $(".chosen-select").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+      // If all required fields are filled
+      if (validateForm()) {
+        // user data
+        var user = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", user, function(data) {
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+        });
+      }
+      else {
+        alert("Please fill out all fields! Call '0118 999 881 999 119 7253' if you need assistance.");
+      }
+    });
+  </script>
+
+</body>
+</html>

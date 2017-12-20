@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+h2, h4, h5, footer, .card {
+  font-family: 'Overpass', sans-serif;
+}
+
+.lead {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.color {
+  color: #ff0000;
+}
